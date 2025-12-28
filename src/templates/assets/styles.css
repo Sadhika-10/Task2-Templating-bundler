@@ -1,0 +1,105 @@
+/* ===========================
+   TravelTours Unified Stylesheet
+   Covers: Home, About, Contact
+   =========================== */
+
+/* Theme Colors */
+:root {
+  --primary: #0d6efd;   /* Bootstrap blue */
+  --accent: #198754;    /* Bootstrap green */
+}
+
+/* Navbar */
+.navbar-brand {
+  font-weight: 700;
+  color: var(--accent) !important;
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+/* Buttons */
+.btn-accent {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+}
+.btn-accent:hover {
+  background-color: #146c43; /* darker green */
+}
+
+/* Hero Sections */
+.hero-home {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.hero-about {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.hero-contact {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1484551789960-b1d9051de3e4');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+}
+
+/* About Section */
+#about h2 {
+  font-weight: 700;
+}
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Stats Icons */
+#about .fa-users,
+#about .fa-globe,
+#about .fa-award {
+  color: var(--accent);
+}
+
+/* Services Section (if added later) */
+.card h5 {
+  font-weight: 600;
+}
+.card {
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+#contact h2 {
+  font-weight: 700;
+}
+#contact .form-label {
+  font-weight: 500;
+}
+#contact .btn-accent {
+  margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+}
+footer a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--accent);
+}
